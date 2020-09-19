@@ -1,0 +1,33 @@
+"*":
+  core:
+    disabledPackages: [
+      "language-gfm"
+      "atom-ide-debugger-python"
+      "python-debugger"
+      "ide-python"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  "custom-folds":
+    postfix_2: "/"
+    prefix_2: "=="
+  editor:
+    scrollPastEnd: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "12f559b8-a199-4c8c-b3c5-d5e67d28519a"
+  "language-markdown":
+    autoIncrementListItems: false
+    disableLanguageGfm: false
+  "markdown-preview": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: false
+".md.text":
+  editor:
+    softWrapAtPreferredLineLength: true

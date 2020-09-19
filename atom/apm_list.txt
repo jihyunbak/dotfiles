@@ -1,0 +1,9 @@
+Hydrogen@2.14.4
+atom-beautify@0.33.4
+atom-ide-debugger-python@0.7.3
+custom-folds@1.9.5
+ide-python@1.5.0
+language-markdown@0.37.0
+markdown-writer@2.11.10
+platformio-ide-terminal@2.10.0
+python-debugger@0.2.0
