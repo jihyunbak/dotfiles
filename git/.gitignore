@@ -1,0 +1,85 @@
+###################################
+# Mac OS
+###################################
+
+# general
+.DS_Store
+.DS_Store?
+Icon
+
+# thumbnails
+._*
+
+# temporary autosave files
+*~
+
+
+###################################
+# Python
+###################################
+
+# build
+build
+
+# python cache files
+__pycache__
+.ipynb_checkpoints
+.~*.ipynb
+
+# custom naming for explorative "notebooks"
+_test.py
+nb_*.py
+nb_*.ipynb
+
+# temporary notes
+_*.md
+
+# log and test output
+_log
+_test
+*.log
+out*_20*_*.txt
+
+
+###################################
+# LaTeX
+###################################
+
+# Compiled latex
+*.aux
+*.log
+*.gz
+*.blg
+*.bbl
+*.toc
+*.top
+*.tui
+*.out
+*eps-converted-to.pdf
+*-mpgraph.mp
+
+# for beamer
+*.nav
+*.snm
+
+# other
+.*.swp
+
+# Exclude pdf versions of latex documents
+# [project_name]*.pdf
+
+
+###################################
+# Custom
+###################################
+
+# directories I like to keep but not track
+_ref
+untracked
+trash
+
+# other files that are usually not tracked
+*.pptx
+*.key
+*.zip
+
