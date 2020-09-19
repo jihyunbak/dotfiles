@@ -16,14 +16,13 @@ echo "Creating symlinks for dotfiles to $HOME"
 if [[ $MACHINE == "Mac" ]]; then
   for f in dotfiles/\.[^.]*; do
     FILE="$(basename $f)"
-    ln -sf "$PWD/dotfiles/$FILE" "$HOME"
-    #echo "$FILE"
-    #if [[ $FILE == ".bash_custom" ]]; then
-    #  echo "Double symlink does not work.. Copying instead."
-    #  cp -p "$PWD/dotfiles/.bash_custom" "$HOME"
-    #else
-    #  ln -sf "$PWD/dotfiles/$FILE" "$HOME"
-    #fi
+    echo "$FILE"
+    #ln -sf "$PWD/dotfiles/$FILE" "$HOME"
+    if [[ $FILE == ".bash_profile" ]]; then
+      echo ".bash_profile is not changed."
+    else
+      ln -sf "$PWD/dotfiles/$FILE" "$HOME"
+    fi
   done
 fi
 
