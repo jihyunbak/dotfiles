@@ -1,5 +1,5 @@
-# JHB custom aliases, to link to ~/.bash_custom
-# run include-bash_custom.sh to include it in ~/.bash_profile
+# JHB custom aliases, to be sourced in ~/.bash_profile
+# run include-bash_custom.sh once to include it
 
 
 # make python3 my default python
