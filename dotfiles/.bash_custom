@@ -1,0 +1,34 @@
+# JHB custom aliases
+# link to ~/.bash_custom (to be called from .bash_profile)
+#
+# --- add these lines to ~/.bash_profile: ---
+# if [ -f ~/.bash_custom ]; then
+#     . ~/.bash_custom
+# fi
+# -------------------------------------------
+
+
+# set default editor to vi
+export EDITOR='vi'
+export VISUAL='vi'
+
+
+# === git ===
+
+# -- git aliases
+alias glg='git log --graph --oneline --decorate'
+alias glga='git log --graph --oneline --decorate --all'
+alias gld='git log --pretty=format:"%h %ad %s" --date=short --all'
+alias gronto='git rebase --committer-date-is-author-date --onto'
+
+# -- git functions
+
+# git log find by commit message
+# (ref: https://jonsuh.com/blog/git-command-line-shortcuts/)
+# use: `glf text_to_find`
+function glf() { git log --all --grep="$1"; }
+
+# modify date of latest commit
+# example date format: "31 Jan 2019 23:57"
+function gcdate() { GIT_COMMITTER_DATE="$1" git commit --amend --no-edit --date "$1"; }
+
