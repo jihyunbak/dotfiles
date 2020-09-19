@@ -1,0 +1,14 @@
+# This is a template for ~/.ssh/config
+
+# -- for using ssh-agent (Mac OS only) --
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_rsa
+# ---------------------------------------
+
+#Host <HOST_ADDRESS>
+#    Port <PORT_NUM>
+#    User <USER_NAME>
+#    ProxyCommand ssh -W %h:%p <thru_server>
+

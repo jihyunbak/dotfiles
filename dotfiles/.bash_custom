@@ -1,5 +1,4 @@
-# JHB custom aliases
-# link to ~/.bash_custom
+# JHB custom aliases, to link to ~/.bash_custom
 # run include-bash_custom.sh to include it in ~/.bash_profile
 
 
