@@ -4,31 +4,8 @@
 # all custom aliases are stored in .bash_custom and being sourced here
 # so that they can be easily copied to a remote machine's .bash_profile. 
 
-# === mac os ===
 
-# silence warning that default shell is now zsh
-# (still using bash after Catalina upgrade)
-export BASH_SILENCE_DEPRECATION_WARNING=1
-
-
-# === command line interface ===
-
-# for color in terminal
-export CLICOLOR=1
-# customize colors
-export LSCOLORS=gxfxcxdxcxegedabagacad
-# cyan directories, green executables
-
-
-# === startup directory ===
-
-# cd ~/Dropbox/Research/
-
-
-# === customization ===
-
-# keep custom aliases etc. in a separate file
-# so that they can be carried around easily
+# keep everthing in a custom file
 if [ -f ~/.bash_custom ]; then
 	. ~/.bash_custom
 fi
@@ -48,10 +25,6 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 
 # === python ===
-
-# set up alias (Dec 2018)
-alias python='python3'
-alias pip='pip3'
 
 # manually adding path for python
 # (following warning at package installation)
