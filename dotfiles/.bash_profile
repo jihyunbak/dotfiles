@@ -6,8 +6,8 @@
 
 
 # keep everthing in a custom file
-if [ -f ~/.bash_custom ]; then
-	. ~/.bash_custom
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
 fi
 
 

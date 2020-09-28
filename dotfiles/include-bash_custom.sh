@@ -5,8 +5,8 @@
 {
     echo "" 
     echo "# include custom alises and settings"
-    echo "if [ -f ~/.bash_custom ]; then"
-    echo "    . ~/.bash_custom"
+    echo "if [ -f ~/.bash_aliases ]; then"
+    echo "    . ~/.bash_aliases"
     echo "fi"
     echo ""
 } >> ~/.bash_profile
