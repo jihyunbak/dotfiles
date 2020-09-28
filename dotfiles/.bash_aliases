@@ -41,7 +41,7 @@ export LSCOLORS=gxfxcxdxcxegedabagacad
 
 # basic ls aliases
 # the -o option lists in long formats, but without the group id
-alias ls='ls -h'
+alias ls='ls -h --color=auto'
 alias la='ls -ao'
 
 # group directories first in ls output

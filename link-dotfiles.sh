@@ -12,15 +12,16 @@ esac
 
 echo "Creating symlinks for dotfiles to $HOME"
 
-# Symlink all dotfiles on Mac
-if [[ $MACHINE == "Mac" ]]; then
+# On Mac or Linux, symlink all dotfiles except .bash_profile
+if [[ ($MACHINE == "Mac" || $MACHINE == "Linux" ) ]]; then
   for f in dotfiles/\.[^.]*; do
     FILE="$(basename $f)"
-    echo "$FILE"
+    #echo "$FILE"
     #ln -sf "$PWD/dotfiles/$FILE" "$HOME"
     if [[ $FILE == ".bash_profile" ]]; then
       echo ".bash_profile is not changed."
     else
+      echo "$FILE"
       ln -sf "$PWD/dotfiles/$FILE" "$HOME"
     fi
   done
@@ -28,9 +29,9 @@ fi
 
 # For now, do not symlink on Linux as it is likely a shared machine;
 # instead copy custom settings manually
-if [[ $MACHINE == "Linux" ]]; then
-    echo "Detected a Linux machine; this script will do nothing."
-fi
+#if [[ $MACHINE == "Linux" ]]; then
+#    echo "Detected a Linux machine; this script will do nothing."
+#fi
 
 echo "Linked dotfiles. Please restart your shell. "
 
