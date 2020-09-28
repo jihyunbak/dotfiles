@@ -41,7 +41,10 @@ export LSCOLORS=gxfxcxdxcxegedabagacad
 
 # basic ls aliases
 # the -o option lists in long formats, but without the group id
-alias ls='ls -h --color=auto'
+alias ls='ls -h'
+if [[ $MACHINE == "Linux" ]]; then
+    alias ls='ls -h --color=auto'
+fi
 alias la='ls -ao'
 
 # group directories first in ls output
