@@ -1,0 +1,24 @@
+###################################
+# Mac OS
+###################################
+
+# general
+.DS_Store
+.DS_Store?
+Icon
+
+# thumbnails
+._*
+
+# temporary autosave files
+*~
+
+
+###################################
+# Custom
+###################################
+
+# directories I like to keep but not track
+untracked
+trash
+

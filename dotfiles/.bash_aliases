@@ -54,6 +54,8 @@ alias la='ls -ao'
 
 # === git ===
 
+alias g=git
+
 # -- git aliases
 alias glg='git log --graph --oneline --decorate'
 alias glga='git log --graph --oneline --decorate --all'

@@ -1,0 +1,80 @@
+[user]
+	name = Ji Hyun Bak
+	email = jihyun.bak@gmail.com
+
+[core]
+	excludesfile = ~/.gitignore_global
+    editor = vi
+
+[alias]
+    s = status 
+    st = status --short --branch
+    a = add
+    aa = !git add --all && git status
+    d = diff
+    ds = diff --staged
+    dw = diff --word-diff
+    dws = diff --word-diff --staged 
+    sh = show --compact-summary
+
+    cm = commit -m
+    amend = commit --amend --no-edit
+    co = checkout
+    cb = checkout -b    
+    rb-onto = rebase --committer-date-is-author-date --onto
+    b = branch
+    bv = branch -vv
+    mm = merge --no-ff
+    sq = merge --squash
+    
+    # interactions with remote
+    fo = fetch origin
+    fup = fetch upstream
+    pull = pull --rebase
+    pus = push
+    pusom = push origin master
+
+    # log tools
+    l = log --pretty=oneline -n 20 --graph --abbrev-commit
+    lg = log --graph --oneline --decorate
+    lga = log --graph --oneline --decorate --all
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+
+    # followed by [filename]
+    follow = log --follow --oneline
+
+    # step back 1 commit
+    undo-commit = reset --hard HEAD~1 
+
+    # submodule
+    sm = submodule
+    sdiff = diff --submodule
+    # update master branhces of all submodules from the main repo
+    sup = submodule update --remote
+
+[color]
+    ui = true
+    diff = true
+    status = auto
+    branch = auto
+
+[diff]
+    # detect copies as well as renames
+    renames = copies    
+
+[url "git@github.com:"]
+    insteadOf = "gh:"
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+#[commit]
+# 	template = ~/.stCommitMsg
+
