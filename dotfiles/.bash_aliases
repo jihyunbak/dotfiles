@@ -39,6 +39,18 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxcxegedabagacad
 # cyan directories, green executables
 
+
+# on a personal Mac, no need to display username
+# also colorize hostname and the working directory
+# coloring ref: https://bluesock.org/~willg/dev/ansi.html
+# bash special characters ref: https://apple.stackexchange.com/a/219133
+if [[ $MACHINE == "Mac" ]]; then
+    # export PS1='\h:\W \u\$'    # --- Mac OS default   
+    # export PS1='\[\033[1;32m\]\h\[\033[0;39m\]:\[\033[1;34m\]\W\[\033[0;39m\]$ '
+    export PS1='\h:\[\033[0;36m\]\W\[\033[0;39m\]$ '
+fi
+
+
 # basic ls aliases
 # the -o option lists in long formats, but without the group id
 alias ls='ls -h'
