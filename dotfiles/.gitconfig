@@ -26,6 +26,14 @@
     bv = branch -vv
     mm = merge --no-ff
     sq = merge --squash
+
+    # ignore changes to already tracked file
+    # (followed by [filename])
+    mute = update-index --assume-unchanged
+    # track it again
+    unmute = update-index --no-assume-unchanged
+    # view list of files that are muted this way
+    list-muted = !git ls-files -v | grep '^[[:lower:]]'
     
     # interactions with remote
     fo = fetch origin

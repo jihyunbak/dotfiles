@@ -15,6 +15,41 @@ Icon
 
 
 ###################################
+# Python
+###################################
+
+# python cache files
+__pycache__
+.ipynb_checkpoints
+.~*.ipynb
+
+
+###################################
+# LaTeX
+###################################
+
+# Compiled latex
+*.aux
+*.log
+*.gz
+*.blg
+*.bbl
+*.toc
+*.top
+*.tui
+*.out
+*eps-converted-to.pdf
+*-mpgraph.mp
+
+# for beamer
+*.nav
+*.snm
+
+# other
+.*.swp
+
+
+###################################
 # Custom
 ###################################
 
