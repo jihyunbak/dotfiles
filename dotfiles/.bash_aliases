@@ -2,6 +2,12 @@
 # run include-bash_custom.sh once to include it
 
 
+# add path to custom shell tools
+if [ -d ~/opt/shelltools ]; then
+    PATH="${HOME}/opt/shelltools:$PATH"
+fi
+
+
 # make python3 my default python
 alias python='python3'
 alias pip='pip3'
@@ -86,8 +92,13 @@ function glf() { git log --all --grep="$1"; }
 function gcdate() { GIT_COMMITTER_DATE="$1" git commit --amend --no-edit --date "$1"; }
 
 
-# === startup directory ===
+# === python virtualenv ===
 
-# cd ~/Dropbox/Research/
+# activate a virtualenv enviroment from a central location
+# use: `vvact ENV_NAME`
+function vvact() { source "${HOME}/.virtualenvs/$1/bin/activate"; }
 
+# create a new virtualenv environment in a central location
+# use: `vvnew ENV_NAME`
+function vvnew() { virtualenv "${HOME}/.virtualenvs/$1"; }
 
