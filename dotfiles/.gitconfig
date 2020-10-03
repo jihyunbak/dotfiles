@@ -36,14 +36,15 @@
     list-muted = !git ls-files -v | grep '^[[:lower:]]'
     
     # interactions with remote
-    fo = fetch origin
-    fup = fetch upstream
+    fo = !git fetch origin && git status
+    fup = !git fetch upstream && git status
     pull = pull --rebase
     pus = push
     pusom = push origin master
 
     # log tools
     l = log --pretty=oneline -n 20 --graph --abbrev-commit
+    la = log --pretty=oneline -n 20 --graph --abbrev-commit --all
     lg = log --graph --oneline --decorate
     lga = log --graph --oneline --decorate --all
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
