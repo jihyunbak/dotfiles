@@ -58,5 +58,5 @@ untracked
 trash
 
 # custom log directories
-_log_nb     # jupyter notebook
+_log_nb
 
