@@ -8,11 +8,6 @@ if [ -d ~/opt/shelltools ]; then
 fi
 
 
-# make python3 my default python
-alias python='python3'
-alias pip='pip3'
-
-
 # detect the operating system
 unameOut="$(uname -s)"
 case "${unameOut}" in
@@ -20,6 +15,7 @@ case "${unameOut}" in
     Darwin*)    MACHINE=Mac;;
     *)          MACHINE="UNKNOWN:${unameOut}"
 esac
+
 
 # set default editor to vi, on a shared linux machine
 if [[ $MACHINE == "Linux" ]]; then
@@ -34,6 +30,12 @@ fi
 # (still using bash after Catalina upgrade)
 if [[ $MACHINE == "Mac" ]]; then
     export BASH_SILENCE_DEPRECATION_WARNING=1
+fi
+
+# make python3 my default python
+if [[ $MACHINE == "Mac" ]]; then
+    alias python='python3'
+    alias pip='pip3'
 fi
 
 
