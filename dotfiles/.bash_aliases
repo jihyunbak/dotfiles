@@ -104,6 +104,11 @@ alias tar-compress='tar -czvf'
 alias tar-extract='tar -xzvf'
 
 
+# save typing
+alias jn='jupyter notebook'
+
+
+
 # === python virtualenv ===
 
 # activate a virtualenv enviroment from a central location
