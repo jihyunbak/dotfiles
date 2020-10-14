@@ -23,6 +23,9 @@ __pycache__
 .ipynb_checkpoints
 .~*.ipynb
 
+# developer mode
+*.egg-info
+
 
 ###################################
 # LaTeX
