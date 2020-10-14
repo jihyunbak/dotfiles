@@ -94,6 +94,16 @@ function glf() { git log --all --grep="$1"; }
 function gcdate() { GIT_COMMITTER_DATE="$1" git commit --amend --no-edit --date "$1"; }
 
 
+# === other tools ===
+
+# tar -czvf name-of-archive.tar.gz /path/to-directory-or-file
+alias tar-compress='tar -czvf'
+
+# tar -xzvf archive.tar.gz
+# tar -xzvf archive.tar.gz -C /path/to/extract/
+alias tar-extract='tar -xzvf'
+
+
 # === python virtualenv ===
 
 # activate a virtualenv enviroment from a central location
