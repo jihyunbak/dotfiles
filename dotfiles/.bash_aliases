@@ -66,6 +66,8 @@ if [[ $MACHINE == "Linux" ]]; then
     alias ls='ls -h --color=auto'
 fi
 alias la='ls -ao'
+alias l='ls -o'
+alias ll='ls -alF'
 
 # group directories first in ls output
 # LC_COLLATE=C means uppercase first
