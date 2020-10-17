@@ -28,6 +28,10 @@
     mm = merge --no-ff
     sq = merge --squash
 
+    # discard changes in a single file
+    # syntax: git checkout HEAD -- my-file.txt
+    discard-change = "!git checkout HEAD -- "
+
     # get the current branch name
     # (not so useful in itself, but used in other aliases)
     curr-branch = "!git rev-parse --abbrev-ref HEAD"
