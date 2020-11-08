@@ -40,6 +40,7 @@
     # used in these aliases
     puso = "!git push origin $(git curr-branch)"
     pulo = "!git pull --rebase origin $(git curr-branch)"
+    pusup = "!git push upstream $(git curr-branch)"
     pulup = "!git pull --rebase upstream $(git curr-branch)"
 
     # ignore changes to already tracked file
@@ -56,6 +57,17 @@
     pull = pull --rebase
     #pus = push
     #pusom = push origin master
+
+    # push to upstream (often with different branch names)
+    # use this as a template
+    pusup-master = "!git push upstream upstream-master:master"
+
+    # prune/cleanup local references to remote branch
+    # specify branch like `git remote prune origin [--dry-run]`
+    prune = remote prune
+
+    # stop tracking remote branch
+    unset = !git branch --unset-upstream
 
     # log tools
     l = log --pretty=oneline -n 20 --graph --abbrev-commit
