@@ -44,6 +44,8 @@ __pycache__
 *eps-converted-to.pdf
 *-mpgraph.mp
 
+*.synctex(busy)
+
 # for beamer
 *.nav
 *.snm
