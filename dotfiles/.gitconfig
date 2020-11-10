@@ -28,6 +28,9 @@
     mm = merge --no-ff
     sq = merge --squash
 
+    # unstage a single file
+    unstage = reset HEAD
+
     # discard changes in a single file
     # syntax: git checkout HEAD -- my-file.txt
     #discard-change = "!git checkout HEAD --"
