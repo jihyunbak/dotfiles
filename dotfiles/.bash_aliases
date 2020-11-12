@@ -58,6 +58,12 @@ if [[ $MACHINE == "Mac" ]]; then
     export PS1='\h:\[\033[0;36m\]\W\[\033[0;39m\]$ '
 fi
 
+if [[ $HOSTNAME == "breeze" ]]; then
+    # -- this is breeze:~/.bashrc default
+    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    # -- just display current dir name (replace \w with \W)
+    export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+fi
 
 # basic ls aliases
 # the -o option lists in long formats, but without the group id
