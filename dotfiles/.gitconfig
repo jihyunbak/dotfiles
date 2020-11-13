@@ -68,6 +68,8 @@
     # prune/cleanup local references to remote branch
     # specify branch like `git remote prune origin [--dry-run]`
     prune = remote prune
+    # fetch all branches and prune
+    fetch-prune = !git fetch --all --prune
 
     # stop tracking remote branch
     unset = !git branch --unset-upstream
