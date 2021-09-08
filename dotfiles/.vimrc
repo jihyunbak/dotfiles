@@ -18,10 +18,10 @@ set nu
 " ===== code folding =====
 
 " Enable folding
-set foldmethod=indent
+"set foldmethod=indent
 "set foldmethod=manual
 "set foldmethod=syntax
-set foldlevel=99
+"set foldlevel=99
 "set foldcolumn=2
 
 " Enable folding with the spacebar

@@ -75,8 +75,8 @@
     unset = !git branch --unset-upstream
 
     # log tools
-    l = log --pretty=oneline -n 20 --graph --abbrev-commit
-    la = log --pretty=oneline -n 20 --graph --abbrev-commit --all
+    l = log --pretty=oneline -n 20 --graph --abbrev-commit --decorate
+    la = log --pretty=oneline -n 20 --graph --abbrev-commit --decorate --all
     lg = log --graph --oneline --decorate
     lga = log --graph --oneline --decorate --all
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat

@@ -61,6 +61,7 @@ __pycache__
 # directories I like to keep but not track
 untracked
 trash
+tmp
 
 # custom log directories
 _log_nb
