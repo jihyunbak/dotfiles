@@ -53,6 +53,11 @@ __pycache__
 # other
 .*.swp
 
+# using LaTeX on Atom
+*-cache.yaml
+*.fdb_latexmk
+*.fls
+
 
 ###################################
 # Custom
