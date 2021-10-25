@@ -67,6 +67,9 @@ __pycache__
 untracked
 trash
 
+# symlink to workspace repo
+workspace
+
 # custom log directories
 _log_nb
 _log_jl
