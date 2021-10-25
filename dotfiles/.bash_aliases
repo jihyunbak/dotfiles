@@ -80,6 +80,7 @@ alias ll='ls -alF'
 #alias ls='LC_COLLATE=C ls -h --group-directories-first'
 
 # ps command
+# (these do not work on mac)
 alias pss='ps -o pid,uname=jhbak,pcpu,pmem,command,time --sort=-pcpu,+pmem'
 alias pst='ps -o pid,uname=jhbak,pcpu,pmem,command,time --sort=-time'
 
