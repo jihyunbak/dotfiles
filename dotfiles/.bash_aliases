@@ -79,6 +79,10 @@ alias ll='ls -alF'
 # LC_COLLATE=C means uppercase first
 #alias ls='LC_COLLATE=C ls -h --group-directories-first'
 
+# ps command
+alias pss='ps -o pid,uname=jhbak,pcpu,pmem,command,time --sort=-pcpu,+pmem'
+alias pst='ps -o pid,uname=jhbak,pcpu,pmem,command,time --sort=-time'
+
 
 # === git ===
 
