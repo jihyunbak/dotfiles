@@ -58,6 +58,11 @@ if [[ $MACHINE == "Mac" ]]; then
     export PS1='\h:\[\033[0;36m\]\W\[\033[0;39m\]$ '
 fi
 
+if [[ $HOSTNAME == "PHYS-03GQ6LT-LT" ]]; then
+    # for UCSF-owned mbair 2020
+    export PS1='JHB-mbair:\[\033[0;36m\]\W\[\033[0;39m\]$ '
+fi
+
 if [[ $HOSTNAME == "breeze" ]]; then
     # -- this is breeze:~/.bashrc default
     #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
