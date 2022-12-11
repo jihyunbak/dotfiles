@@ -74,3 +74,6 @@ workspace
 _log_nb
 _log_jl
 
+# helper script
+find_in_codebase_gitignored.sh
+
