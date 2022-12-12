@@ -60,7 +60,7 @@ fi
 
 if [[ $HOSTNAME == "PHYS-03GQ6LT-LT" ]]; then
     # for UCSF-owned mbair 2020
-    export PS1='JHB-mbair:\[\033[0;36m\]\W\[\033[0;39m\]$ '
+    export PS1='JHB-mbair-ucsf:\[\033[0;36m\]\W\[\033[0;39m\]$ '
 fi
 
 if [[ $HOSTNAME == "breeze" ]]; then
